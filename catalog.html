@@ -22,53 +22,90 @@
   </header>
   <main class="container">
     <h1 class="page-title visually-hidden">Гостиницы</h1>
-    <ul class="catalog-list">
-      <li class="catalog-item">
-        <h2 class="catalog-item-name">Amara Resort & Spa</h2>
-        <img src="img/catalog-item1.jpg" alt="Amara Resort & Spa">
-        <p class="catalog-item-kind">Гостиница</p>
-        <p class="catalog-item-price">От 4000 Р.</p>
-        <a href="#">Подробнее</a><button type="button">Забронировать</button>
-        <div class="raiting">
-          <ul class="raiting-star">
-            <li><img src="img/star.svg" alt="Звёздочка"></li>
-            <li><img src="img/star.svg" alt="Звёздочка"></li>
-            <li><img src="img/star.svg" alt="Звёздочка"></li>
-            <li><img src="img/star.svg" alt="Звёздочка"></li>
-          </ul>
-          <p>Рейтинг: 8,5</p>
+    <section class="filter">
+      <div class="settings">
+        <div class="infrastructure">
+          <h2>Инфраструктура:</h2>
+          <span class="checked">Бассейн</span>
+          <span>Парковка</span>
+          <span>Wi-Fi</span>
         </div>
-      </li>
-      <li class="catalog-item">
-        <h2 class="catalog-item-name">Desert Quail Inn</h2>
-        <img src="img/catalog-item2.jpg" alt="Desert Quail Inn">
-        <p class="catalog-item-kind">Мотель</p>
-        <p class="catalog-item-price">От 3000 Р.</p>
-        <a href="#">Подробнее</a><button type="button">Забронировать</button>
-        <div class="raiting">
-          <ul class="raiting-star">
-            <li><img src="img/star.svg" alt="Звёздочка"></li>
-            <li><img src="img/star.svg" alt="Звёздочка"></li>
-            <li><img src="img/star.svg" alt="Звёздочка"></li>
-          </ul>
-          <p>Рейтинг: 8,9</p>
+        <div class="kind">
+          <h2>Тип жилья:</h2>
+          <span checked="checked">Гостиница</span>
+          <span checked="checked">Мотель</span>
+          <span checked="checked">Апартаменты</span>
         </div>
-      </li>
-      <li class="catalog-item">
-        <h2 class="catalog-item-name">Villas at Poco Diablo</h2>
-        <img src="img/catalog-item2.jpg" alt="Villas at Poco Diablo">
-        <p class="catalog-item-kind">Апартаменты</p>
-        <p class="catalog-item-price">От 2000 Р.</p>
-        <a href="#">Подробнее</a><button type="button">Забронировать</button>
-        <div class="raiting">
-          <ul class="raiting-star">
-            <li><img src="img/star.svg" alt="Звёздочка"></li>
-            <li><img src="img/star.svg" alt="Звёздочка"></li>
-          </ul>
-          <p>Рейтинг: 9,2</p>
+        <div class="cost">
+          <h2>Стоимость в сутки (Р):</h2>
+          <span>От 0</span>
+          <span>До 3000</span>
+          <button class="button">Показать</button>
         </div>
-      </li>
-    </ul>
+      </div>
+      <div class="filter-footer">
+        <div class="result">
+          <h2>Найдено: </h2>
+          <span>3</span>
+        </div>
+        <div class="sort">
+          <h3>Сортировка: </h3>
+          <span>По цене</span>
+          <span class="checked">По типу</span>
+          <span class="checked">По рейтингу</span>
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <h2 class="catalog-item-name">Amara Resort & Spa</h2>
+          <img src="img/catalog-item1.jpg" alt="Amara Resort & Spa">
+          <p class="catalog-item-kind">Гостиница</p>
+          <p class="catalog-item-price">От 4000 Р.</p>
+          <a href="#">Подробнее</a><button type="button">Забронировать</button>
+          <div class="raiting">
+            <ul class="raiting-star">
+              <li><img src="img/star.svg" alt="Звёздочка"></li>
+              <li><img src="img/star.svg" alt="Звёздочка"></li>
+              <li><img src="img/star.svg" alt="Звёздочка"></li>
+              <li><img src="img/star.svg" alt="Звёздочка"></li>
+            </ul>
+            <p>Рейтинг: 8,5</p>
+          </div>
+        </li>
+        <li class="catalog-item">
+          <h2 class="catalog-item-name">Desert Quail Inn</h2>
+          <img src="img/catalog-item2.jpg" alt="Desert Quail Inn">
+          <p class="catalog-item-kind">Мотель</p>
+          <p class="catalog-item-price">От 3000 Р.</p>
+          <a href="#">Подробнее</a><button type="button">Забронировать</button>
+          <div class="raiting">
+            <ul class="raiting-star">
+              <li><img src="img/star.svg" alt="Звёздочка"></li>
+              <li><img src="img/star.svg" alt="Звёздочка"></li>
+              <li><img src="img/star.svg" alt="Звёздочка"></li>
+            </ul>
+            <p>Рейтинг: 8,9</p>
+          </div>
+        </li>
+        <li class="catalog-item">
+          <h2 class="catalog-item-name">Villas at Poco Diablo</h2>
+          <img src="img/catalog-item2.jpg" alt="Villas at Poco Diablo">
+          <p class="catalog-item-kind">Апартаменты</p>
+          <p class="catalog-item-price">От 2000 Р.</p>
+          <a href="#">Подробнее</a><button type="button">Забронировать</button>
+          <div class="raiting">
+            <ul class="raiting-star">
+              <li><img src="img/star.svg" alt="Звёздочка"></li>
+              <li><img src="img/star.svg" alt="Звёздочка"></li>
+            </ul>
+            <p>Рейтинг: 9,2</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
   </main>
   <footer class="main-footer">
     <p>#visitSEDONA</p>
