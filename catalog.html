@@ -23,24 +23,26 @@
   <main class="container">
     <h1 class="page-title visually-hidden">Гостиницы</h1>
     <section class="filter">
-      <div class="settings">
-        <div class="infrastructure">
-          <h2>Инфраструктура:</h2>
-          <span class="checked">Бассейн</span>
-          <span>Парковка</span>
-          <span>Wi-Fi</span>
-        </div>
-        <div class="kind">
-          <h2>Тип жилья:</h2>
-          <span class="checked">Гостиница</span>
-          <span class="checked">Мотель</span>
-          <span class="checked">Апартаменты</span>
-        </div>
-        <div class="cost">
-          <h2>Стоимость в сутки (Р):</h2>
-          <span>От 0</span>
-          <span>До 3000</span>
-          <button class="button">Показать</button>
+      <div class="wrap" style="background: url(img/filter-bg.jpg) no-repeat;">
+        <div class="settings">
+          <div class="infrastructure">
+            <h2>Инфраструктура:</h2>
+            <span class="checked">Бассейн</span>
+            <span>Парковка</span>
+            <span>Wi-Fi</span>
+          </div>
+          <div class="kind">
+            <h2>Тип жилья:</h2>
+            <span class="checked">Гостиница</span>
+            <span class="checked">Мотель</span>
+            <span class="checked">Апартаменты</span>
+          </div>
+          <div class="cost">
+            <h2>Стоимость в сутки (Р):</h2>
+            <span>От 0</span>
+            <span>До 3000</span>
+            <button class="button">Показать</button>
+          </div>
         </div>
       </div>
       <div class="filter-footer">
@@ -53,6 +55,7 @@
           <span>По цене</span>
           <span class="checked">По типу</span>
           <span class="checked">По рейтингу</span>
+          <img src="img/icon-up-dir.svg"> <img src="img/icon-down-dir.svg">
         </div>
       </div>
     </section>
@@ -65,7 +68,12 @@
           <p class="catalog-item-price">От 4000 Р.</p>
           <a href="#">Подробнее</a><button type="button">Забронировать</button>
           <div class="raiting">
-            <p class="raiting-star">★★★★</p>
+            <p class="raiting-star">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+            </p>
             <p>Рейтинг: 8,5</p>
           </div>
         </li>
@@ -76,7 +84,11 @@
           <p class="catalog-item-price">От 3000 Р.</p>
           <a href="#">Подробнее</a><button type="button">Забронировать</button>
           <div class="raiting">
-            <p class="raiting-star">★★★</p>
+            <p class="raiting-star">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+            </p>
             <p>Рейтинг: 8,9</p>
           </div>
         </li>
@@ -87,7 +99,10 @@
           <p class="catalog-item-price">От 2000 Р.</p>
           <a href="#">Подробнее</a><button type="button">Забронировать</button>
           <div class="raiting">
-            <p class="raiting-star">★★</p>
+            <p class="raiting-star">
+              <img src="img/star.svg">
+              <img src="img/star.svg">
+            </p>
             <p>Рейтинг: 9,2</p>
           </div>
         </li>
@@ -98,11 +113,13 @@
   <footer class="main-footer">
     <p>#visitSEDONA</p>
     <div class="footer-social">
-      <ul>
-        <li><a class="social-button" href="#">Твиттер</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Ютуб</a></li>
-      </ul>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#"><img src="img/twitter.png" width="46" height="48" alt="Твитер"></a></li>
+          <li><a class="social-button" href="#"><img src="img/facebook.png" width="46" height="48" alt="Фейсбук"></a></li>
+          <li><a class="social-button" href="#"><img src="img/youtube.png" width="46" height="48" alt="Ютуб"></a></li>
+        </ul>
+      </div>
     </div>
     <p class="footer-copyright">
       Website by

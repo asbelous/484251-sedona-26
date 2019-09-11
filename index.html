@@ -18,8 +18,10 @@
         <li><a href="map.html">Карта штата</a></li>
         <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
-      <img class="welcome" src="img/intro-welcome.svg" width="456.65" height="350.88"
+      <div class="wrap" style="width: 1200px; height: 800px; background: url(img/index-bg.jpg) no-repeat;">
+      <img class="welcome" src="img/intro-welcome.svg" width="457" height="352"
         alt="Welcome to the gorgeus Sedona">
+      </div>
     </nav>
   </header>
   <main class="container">
@@ -54,7 +56,7 @@
         </ul>
       </div>
       <div class="reason-2">
-        <img src="img/devilbrige.jpg" width="800" height="256" alt="Мост дьявола">
+        <img src="img/devilbridge.jpg" width="800" height="256" alt="Мост дьявола">
         <h3>Там есть мост дьявола</h3>
         <p>— №2 —</p>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -82,20 +84,38 @@
     <section class="search">
       <h2 class="visually-hidden">Поиск гостиниц</h2>
       <!-- Эдесь будет форма -->
-      <button class="submit">Найти</button>
+      <form action="">
+        <label>
+          Дата заезда:
+          <input type="date" value="2017-04-24"> <img src="img/calendar.svg">
+        </label><br>
+        <label>
+          Дата выезда:
+          <input type="date" value="2017-07-04"> <img src="img/calendar.svg">
+        </label><br>
+        <label>
+          Взрослые:
+           <img src="img/minus.svg"> <input type="number" value="2"> <img src="img/plus.svg">
+        </label>
+        <label>
+          Дети:
+           <img src="img/minus.svg"> <input type="number" value="0"> <img src="img/plus.svg">
+        </label>
+      </form>
+      <input type="submit" value="Найти">
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="img/map.jpg" width="1202" height="475" alt="Карта дорог">
+      <img src="img/map.jpg" width="1200" height="594" alt="Карта дорог">
     </section>
   </main>
   <footer class="main-footer">
     <p>#visitSEDONA</p>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#">Твиттер</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Ютуб</a></li>
+        <li><a class="social-button" href="#"><img src="img/twitter.png" width="46" height="48" alt="Твитер"></a></li>
+        <li><a class="social-button" href="#"><img src="img/facebook.png" width="46" height="48" alt="Фейсбук"></a></li>
+        <li><a class="social-button" href="#"><img src="img/youtube.png" width="46" height="48" alt="Ютуб"></a></li>
       </ul>
     </div>
     <p class="footer-copyright">
