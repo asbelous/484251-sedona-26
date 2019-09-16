@@ -19,8 +19,7 @@
         <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
       <div class="wrap" style="width: 1200px; height: 800px; background: url(img/index-bg.jpg) no-repeat;">
-      <img class="welcome" src="img/intro-welcome.svg" width="457" height="352"
-        alt="Welcome to the gorgeus Sedona">
+        <img class="welcome" src="img/intro-welcome.svg" width="457" height="352" alt="Welcome to the gorgeus Sedona">
       </div>
     </nav>
   </header>
@@ -82,40 +81,49 @@
       <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </section>
     <section class="search">
-      <h2 class="visually-hidden">Поиск гостиниц</h2>
-      <!-- Эдесь будет форма -->
-      <form action="">
-        <label>
-          Дата заезда:
-          <input type="text" value="2017-04-24"> <img src="img/calendar.svg">
-        </label><br>
-        <label>
-          Дата выезда:
-          <input type="text" value="2017-07-04"> <img src="img/calendar.svg">
-        </label><br>
-        <label>
-          Взрослые:
-           <img src="img/minus.svg"> <input type="text" value="2"> <img src="img/plus.svg">
-        </label>
-        <label>
-          Дети:
-           <img src="img/minus.svg"> <input type="text" value="0"> <img src="img/plus.svg">
-        </label>
+      <h2>Поиск гостиницы в Седоне</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="arrival-date">Дата заезда:</label>
+          <input type="text" placeholder="2017-04-24" id="arrival-date" name="arrival-date"><img src="img/calendar.svg">
+        </p>
+        <p>
+          <label for="date-of-departure">Дата выезда:</label>
+          <input type="text" placeholder="2017-07-04" id="date-of-departure" name="date-of-departure"><img
+            src="img/calendar.svg">
+        </p>
+        <p>
+          <label for="number-of-adults">Взрослые:</label>
+          <img src="img/minus.svg"> <input type="text" value="2" id="number-of-adults" name="number-of-adults"> <img
+            src="img/plus.svg">
+          <label for="number-of-children">Дети:</label>
+          <img src="img/minus.svg"> <input type="text" value="0" id="number-of-children" name="number-of-children"> <img
+            src="img/plus.svg">
+        </p>
       </form>
-      <input type="submit" value="Найти">
+      <button class="button" type="submit">Найти</button>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="img/map.jpg" width="1200" height="594" alt="Карта дорог">
+      <img src="img/map.jpg" width="1200" height="594" alt="Карта дорог ">
     </section>
   </main>
   <footer class="main-footer">
     <p>#visitSEDONA</p>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#"><div style="width: 46px; height: 48px; background-color: #81b3d2; text-align: center;"><img src="img/twitter.svg" style="margin-top: 17px"; width="17" height="15" alt="Твитер"></div></a></li>
-        <li><a class="social-button" href="#"><div style="width: 46px; height: 48px; background-color: #81b3d2; text-align: center;"><img src="img/facebook.svg" style="margin-top: 13px"; width="12" height="22" alt="Фейсбук"></div></a></li>
-        <li><a class="social-button" href="#"><div style="width: 46px; height: 48px; background-color: #81b3d2; text-align: center;"><img src="img/youtube.svg" style="margin-top: 16px"; width="20" height="16" alt="Ютуб"></div></a></li>
+        <li><a class="social-button" href="#">
+            <div style="width: 46px; height: 48px; background-color: #81b3d2; text-align: center;"><img
+                src="img/twitter.svg" style="margin-top: 17px" ; width="17" height="15" alt="Твитер"></div>
+          </a></li>
+        <li><a class="social-button" href="#">
+            <div style="width: 46px; height: 48px; background-color: #81b3d2; text-align: center;"><img
+                src="img/facebook.svg" style="margin-top: 13px" ; width="12" height="22" alt="Фейсбук"></div>
+          </a></li>
+        <li><a class="social-button" href="#">
+            <div style="width: 46px; height: 48px; background-color: #81b3d2; text-align: center;"><img
+                src="img/youtube.svg" style="margin-top: 16px" ; width="20" height="16" alt="Ютуб"></div>
+          </a></li>
       </ul>
     </div>
     <p class="footer-copyright">
