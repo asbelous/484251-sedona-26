@@ -16,228 +16,137 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {
+.navigation {
   font-size: 14px;
   color: #000000;
 
   background-color: #ffffff;
 }
 
-.cite-navigation {
+.navigation-items {
   list-style: none;
 }
 
-.cite-navigation a {
+.navigation-items a {
   color: #000000;
 }
 
-.cite-navigation a:hover {
+.navigation-items a:hover {
   color: #81b3d2;
 }
 
-.cite-navigation a:active {
+.navigation-items a:active {
   opacity: 0.3;
 }
 
-.introduce {
+.banner {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  padding-top: 70px;
+}
+
+.banner:before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 60px;
+  bottom: -3px;
+  left: 0px;
+  background: url('../img/intro-mask.svg')no-repeat center center / cover;
+  z-index: 1;
+}
+
+.banner-text {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.wrap {
   text-align: center;
 }
 
-.introduce h2 {
+h3 {
   font-size: 21px;
 }
 
-.introduce p {
-  font-weight: 400;
+.text {
   color: #333333;
-}
-
-.interesting {
-  text-align: center;
-}
-
-.interesting h2 {
-  font-size: 30px;
-}
-
-.interesting p {
   font-weight: 400;
-  color: #333333;
 }
 
-.catalog-list {
-  list-style: none;
-}
-
-.catalog-item-name a{
-  font-size: 21px;
-  color: #000000;
-}
-
-.catalog-item-name a:hover {
-  color: #81b3d2;
-}
-
-.catalog-item-name a:active {
-  opacity: 0.3;
-}
-
-.catalog-item-kind,
-.catalog-item-price {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  color: #333333;
-}
-
-table a {
-  line-height: 21px;
+.blue {
   color: #ffffff;
+
   background-color: #81b3d2;
 }
 
-table a:hover {
-  background-color: #669ec0;
+.grey {
+  background-color: #f3f3f3;
 }
 
-table a:active {
-  opacity: 0.3;
-  background-color: #5496bd;
-}
-
-table button {
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 21px;
-  color: #ffffff;
-  background-color: #766357;
-}
-
-table button:hover {
-  background-color: #604e43;
-}
-
-table button:active {
-  opacity: 0.3;
-  background-color: #503e33;
-}
-
-.raiting {
-  font-weight: 400;
-  line-height: 21px;
+h2 {
+  font-size: 30px;
 }
 
 .search {
-  text-align: center;
-}
-
-.search h2 a{
   font-size: 21px;
+  font-weight: 700;
   color: #ffffff;
+  text-transform: uppercase;
+  line-height: 26px;
 
   background-color: #766357;
 }
 
-.search h2 a:hover {
+.search:hover {
   background-color: #604e43;
 }
 
-.search h2 a:active {
+.search:active {
   opacity: 0.3;
+
   background-color: #503e33;
 }
 
-#arrival-date,
-#date-of-departure {
+input {
+  font-weight: 700;
+  color: 000000;
   background-color: #f2f2f2;
   border: none;
 }
 
-#arrival-date:hover,
-#date-of-departure:hover {
+.date input:hover {
   background-color: #ebebeb;
 }
 
-#arrival-date:focus,
-#date-of-departure:focus {
-  background-color: #ffffff;
+.date input:focus {
   border: 2px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
-.search .button {
-  font-size: 21px;
-  color: #ffffff;
-
-  background-color: #81b3d2;
+label path:hover {
+  fill:#000000;
 }
 
-.search .button:hover {
-  background-color: #669ec0;
+label path:active {
+  fill:#81b3d2;
 }
 
-.search .button:active {
-  opacity: 0.3;
-
-  background-color: #5496bd;
-}
-
-.visit {
-  font-size: 21px;
-}
-
-.footer-social ul {
-  list-style: none;
-}
-
-.social-button div {
+.social img {
   width: 46px;
   height: 48px;
 
-  text-align: center;
-
   background-color: #81b3d2;
 }
 
-.social-button div:hover {
-  background-color: #669ec0;
+.copyright-link svg {
+  width: 114px;
+  height: 40px;
 }
 
-.social-button div:active {
-  background-color: #5496bd;
-}
-
-.twitter img {
-  margin-top: 17px;
-}
-
-.twitter img:active {
-  opacity: 0.3;
-}
-
-.facebook img {
-  margin-top: 13px;
-}
-
-.facebook img:active {
-  opacity: 0.3;
-}
-
-.youtube img {
-  margin-top: 16px;
-}
-
-.youtube img:active {
-  opacity: 0.3;
-}
-
-.footer-copyright {
-  font-weight: 400;
-}
-
-.footer-copyright img:hover {
-  opacity: 0.7;
-}
-
-.footer-copyright img:active {
-  opacity: 0.3;
+.copyright-link path:hover {
+  fill: #81b3d2;
 }

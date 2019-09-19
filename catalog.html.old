@@ -98,7 +98,7 @@
           <div class="search-item">
             <img src="img/catalog-item1.jpg" width="135" height="90" alt="Amara Resort & Spa" style="float: left;">
             <div class="search-item-data">
-              <h3 class="catalog-item-name"><a href="#">Amara Resort & Spa</a></h2>
+              <h2 class="catalog-item-name"><a href="#">Amara Resort & Spa</a></h2>
               <table>
                 <tr>
                   <td>
@@ -133,7 +133,7 @@
           <div class="search-item">
             <img src="img/catalog-item2.jpg" width="135" height="90" alt="Desert Quail Inn" style="float: left;">
             <div class="search-item-data">
-              <h3 class="catalog-item-name"><a href="">Desert Quail Inn</a></h2>
+              <h2 class="catalog-item-name"><a href="">Desert Quail Inn</a></h2>
               <table>
                 <tr>
                   <td>
