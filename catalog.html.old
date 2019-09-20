@@ -23,6 +23,7 @@
       </ul>
     </nav>
   </header>
+
   <main class="container">
     <h1 class="page-title visually-hidden">Гостиницы</h1>
     <section class="filter">

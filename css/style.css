@@ -39,6 +39,10 @@ a {
   opacity: 0.3;
 }
 
+.navigation-items .active {
+  color: #766357;
+}
+
 .banner {
   position: relative;
   height: 400px;
@@ -94,18 +98,21 @@ h2 {
 .search {
   font-size: 21px;
   font-weight: 700;
+  line-height: 26px;
+}
+
+button {
   color: #ffffff;
   text-transform: uppercase;
-  line-height: 26px;
 
   background-color: #766357;
 }
 
-.search:hover {
+button:hover {
   background-color: #604e43;
 }
 
-.search:active {
+button:active {
   opacity: 0.3;
 
   background-color: #503e33;
@@ -128,25 +135,170 @@ input {
 }
 
 label path:hover {
-  fill:#000000;
+  fill: #000000;
 }
 
 label path:active {
-  fill:#81b3d2;
+  fill: #81b3d2;
 }
 
-.social img {
+.search-form .button {
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.search-form .button:hover {
+  background-color: #669ec0;
+}
+
+.search-form .button:active {
+  opacity: 0.3;
+
+  background-color: #5496bd;
+}
+
+.social .img {
   width: 46px;
   height: 48px;
 
   background-color: #81b3d2;
 }
 
+.social .img:hover {
+  background-color: #669ec0;
+}
+
+.social .img:active,
+.social .img path:active {
+  opacity: 0.3;
+  background-color: #5496bd;
+
+}
+
 .copyright-link svg {
   width: 114px;
   height: 40px;
+
 }
 
 .copyright-link path:hover {
   fill: #81b3d2;
+}
+
+.copyright-link path:active {
+  opacity: 0.3;
+}
+
+.catalog-item {
+  list-style: none;
+}
+
+h3 a:hover {
+  color: #81b3d2;
+}
+
+h3 a:active {
+  opacity: 0.3;
+}
+
+a.button {
+  color: #ffffff;
+  line-height: 21px;
+
+  background-color: #81b3d2;
+}
+
+a.button:hover {
+  background-color: #669ec0;
+}
+
+a.button:active {
+  opacity: 0.3;
+
+  background-color: #5496bd;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.white {
+  color: #ffffff;
+}
+
+fieldset {
+  border: none;
+  font-size: 16px;
+}
+
+fieldset button {
+  border: 2px solid #ffffff;
+
+  background-color: rgba(0, 0, 0, 0);
+}
+
+fieldset button:hover {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-option {
+  font-weight: 400;
+}
+
+.text-small {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.active {
+  color: #81b3d2;
+}
+
+.sort .not-active {
+  opacity: 0.3;
+
+  border-bottom: 1px dotted #000000;
+}
+
+.sort .not-active:hover {
+  color: #81b3d2;
+
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort .not-active:active {
+  color: #000000;
+}
+
+.up-down path {
+  fill: #cacaca;
+}
+
+.up-down .active path {
+  fill: #81b3d2;
+}
+
+.up-down path:hover {
+  fill: #000000;
+}
+
+.up-down path:active {
+  fill: #81b3d2;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]::before {
+  background-image: url("../img/checkbox-off.svg");
 }
