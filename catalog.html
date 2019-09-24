@@ -27,76 +27,87 @@
 
   <main class="container">
     <h1 class="page-title visually-hidden">Гостиницы</h1>
+
     <section class="filter">
-      <div class="wrap" style="background: url(img/filter-bg.jpg) no-repeat;">
-        <form class="filter white" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Инфраструктура:</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimpool"
-                  id="filter-swimpool" checked>
-                <label for="filter-swimpool">Бассейн</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking"
-                  id="filter-parking">
-                <label for="filter-parking">Парковка</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi"
-                  id="filter-wifi">
-                <label for="filter-wifi">Wi-Fi</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Тип жилья:</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel"
-                  id="filter-hotel" checked>
-                <label for="filter-hotel">Гостиница</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel"
-                  id="filter-motel" checked>
-                <label for="filter-motel">Мотель</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments"
-                  id="filter-apartments" checked>
-                <label for="filter-apartments">Апартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
-            <span class="text white">От 0</span><span class="text white">До 3000</span><br>
-            <div class="decoration">
-              <img src="img/decoration.svg">
-            </div>
-            <button class="button text white">Показать</button>
-          </fieldset>
-        </form>
-      </div>
-      <div class="filter-footer">
-        <div class="result">
-          <h3>Найдено: 3</h3>
+      <div class="wrap">
+
+        <div class="filter-wrap">
+          <form class="filter white" method="get" action="https://echo.htmlacademy.ru">
+
+            <fieldset class="check">
+              <legend>Инфраструктура:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimpool"
+                    id="filter-swimpool" checked>
+                  <label for="filter-swimpool">Бассейн</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking"
+                    id="filter-parking">
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi"
+                    id="filter-wifi">
+                  <label for="filter-wifi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="check">
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel"
+                    id="filter-hotel" checked>
+                  <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel"
+                    id="filter-motel" checked>
+                  <label for="filter-motel">Мотель</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments"
+                    id="filter-apartments" checked>
+                  <label for="filter-apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset>
+              <legend>Стоимость в сутки (Р):</legend>
+              <span class="text white">От 0</span><span class="text white">До 3000</span><br>
+              <div class="decoration">
+                <img src="img/decoration.svg">
+              </div>
+              <button class="button text white">Показать</button>
+            </fieldset>
+
+          </form>
         </div>
-        <div class="sort text-small">
-          <span>Сортировка: </span>
-          <span class="active">По цене</span>
-          <span class="not-active">По типу</span>
-          <span class="not-active">По рейтингу</span>
-          <div class="up-down">
-            <svg class="up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-              <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg> <svg class="down active"
-              xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-              <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
+
+        <div class="filter-footer">
+          <div class="result">
+            <h3>Найдено: 3</h3>
           </div>
+          <div class="sort text-small">
+            <div>Сортировка: </div>
+            <div class="active">По цене</div>
+            <div class="not-active">По типу</div>
+            <div class="not-active">По рейтингу</div>
+          </div>
+            <div class="up-down">
+              <svg class="up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg> <svg class="down active"
+                xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
+            </div>
+
         </div>
       </div>
+
     </section>
 
     <section class="catalog">
