@@ -500,6 +500,10 @@ input[type="checkbox"]::before {
   margin-top: -6px;
 }
 
+.item-name a {
+  color: #000000;
+}
+
 .raiting {
   margin-top: 30px;
   margin-right: 71px;
