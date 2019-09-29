@@ -159,6 +159,7 @@ label path:active {
   height: 58px;
   font-size: 21px;
   font-weight: 700;
+  margin-top: 18px;
   color: #ffffff;
 
   background-color: #81b3d2;
@@ -205,15 +206,16 @@ label path:active {
 .copyright {
   display: flex;
   align-items: center;
-  margin-right: -70px;
+  margin-right: 103px;
 }
 
 .copyright .text {
-  width: 104px;
+  width: 88px;
 }
 
 .copyright-link {
   display: block;
+  margin-top: 10px;
 
 }
 
@@ -348,10 +350,16 @@ input[type="checkbox"]::before {
   height: 120px;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
+.footer h3 {
+  margin-left: 129px;
+}
 
+.footer .social {
+  margin-left: 41px;
+}
 
 .interesting {
   display: flex;
@@ -366,12 +374,14 @@ input[type="checkbox"]::before {
 }
 
 .interesting h2 {
-  margin-top: 55px;
+  margin-top: 54px;
   margin-bottom: 40px;
 }
 
 .interesting .text {
-  margin-bottom: 35px;
+  margin-top: -11px;
+  margin-bottom: 45px;
+  line-height: 25px;
 }
 
 .interesting .search {
@@ -382,13 +392,21 @@ input[type="checkbox"]::before {
 .introduce {
   display: flex;
   width: 1200px;
-  height: 216px;
+  height: 215px;
   margin: 0 auto;
 }
 
 .introduce .wrap {
   width: auto;
   margin: auto;
+}
+
+.introduce h3 {
+  margin-top: 5px;
+}
+
+.introduce .text {
+  margin-top: 28px;
 }
 
 .search-form {
@@ -421,7 +439,7 @@ input[type="checkbox"]::before {
   background-color: #5496bd;
   background:
     url('../img/intro-mask.svg') 0 101% no-repeat,
-    url('../img/index-bg.jpg');
+    url('../img/index-bg.jpg') 0 29%;
 
 }
 
@@ -541,7 +559,17 @@ input[type="checkbox"]::before {
 }
 
 .data h3 {
-  margin-top: 42px;
+  margin-top: 47px;
+  line-height: 20px;
+}
+
+.text.white:first-child {
+  margin-top: 23px;
+}
+
+.text.white:last-child {
+  margin-top: 18px;
+  line-height: 24px;
 }
 
 .advantage {
@@ -558,11 +586,33 @@ input[type="checkbox"]::before {
   margin-top: 59px;
 }
 
+.advantage .img {
+  margin-top: -26px;
+}
+
+.advantage .wrap .item:last-child .img {
+  margin-top: -6px;
+}
+
+.advantage .item .text {
+  line-height: 20px;
+}
+
 .grey .item {
   display: block;
   width: 400px;
   margin: auto;
   margin-top: 43px;
+}
+
+.reasons .grey .item h3 {
+  margin-top: 2px;
+  line-height: 22px;
+}
+
+.reasons .grey .item .text:last-child {
+  margin-top: 18px;
+  line-height: 22px;
 }
 
 .filter {
@@ -654,4 +704,91 @@ fieldset:nth-child(3) {
   margin-right: 73px;
   margin-left: auto;
 }
+
+.map {
+  display: flex;
+}
+
+.map .wrap {
+  width: 1200px;
+  height: 471px;
+  margin: 0 auto;
+  background: url('../img/map.jpg') no-repeat;
+}
+
+/* <section class="search-form"> */
+
+.search-form form {
+  width: 458px;
+  height: 153px;
+}
+
+form .date {
+  text-align: left;
+}
+
+.date input {
+  position: absolute;
+  width: 335px;
+  height: 37px;
+  top: -7px;
+  right: 0;
+  padding-left: 14px;
+  text-transform: uppercase;
+
+}
+
+
+
+.date label {
+  position: relative;
+  display: block;
+  width: 458px;
+  margin-top: 6px;
+  margin-bottom: 41px;
+}
+
+.date label[value] {
+  vertical-align: middle;
+}
+
+label svg {
+  position: absolute;
+  right: 10px;
+  top: 1px;
+}
+
+.members {
+  display: flex;
+  justify-content: space-between;
+}
+
+.members-box {
+  position: relative;
+  width: 226px;
+  text-align: left;
+}
+
+.choice {
+  display: flex;
+  position: absolute;
+  width: 114px;
+  right: 0;
+  top: -6px;
+  background-color: #f2f2f2;
+}
+
+.choice-box {
+
+  width: 38px;
+  height: 38px;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+.children {
+  width: 179px;
+}
+
 
