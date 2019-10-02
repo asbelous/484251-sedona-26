@@ -32,6 +32,7 @@ input[type="radio"].visually-hidden {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 a {
@@ -140,11 +141,12 @@ input {
   font-weight: 700;
   color: 000000;
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid #f2f2f2;
 }
 
 .date input:hover {
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .date input:focus {
@@ -280,6 +282,10 @@ fieldset button:hover {
   font-weight: 400;
 }
 
+.filter-option label {
+  cursor: pointer;
+}
+
 .check-box {
   position: absolute;
   width: 27px;
@@ -308,6 +314,10 @@ fieldset button:hover {
 
 .active {
   color: #81b3d2;
+}
+
+.not-active {
+  cursor: pointer;
 }
 
 .sort .not-active {
@@ -342,13 +352,9 @@ fieldset button:hover {
   fill: #81b3d2;
 }
 
-/* input[type="checkbox"] {
-  display: none;
+.up, .down {
+  cursor: pointer;
 }
-
-input[type="checkbox"]::before {
-  background-image: url("../img/checkbox-off.svg");
-} */
 
 .footer .wrap {
   display: flex;
@@ -642,8 +648,6 @@ td .text {
 .filter .wrap {
 
   height: 303px;
-
-
 }
 
 .filter-wrap {
@@ -791,13 +795,37 @@ label svg {
   background-color: #f2f2f2;
 }
 
+.adults .choice {
+  left: 104px;
+}
+
 .choice-box {
+  box-sizing: border-box;
+  position: relative;
 
   width: 38px;
   height: 38px;
 
   text-align: center;
   vertical-align: middle;
+
+  cursor: pointer;
+}
+
+.choice-box svg {
+  width: 12px;
+  height: 12px;
+  top: 13px;
+  left: 13px;
+  fill: #a9a9a9;
+}
+
+.choice-box:hover svg {
+  fill: #000000;
+}
+
+.choice-box:active svg {
+  fill: #81b3d2;
 }
 
 .children {
@@ -982,3 +1010,4 @@ label svg {
 }
 
 /* filter-range -----------------------------------------------------------------------*/
+
