@@ -167,7 +167,7 @@ input {
   height: 58px;
   font-size: 21px;
   font-weight: 700;
-  margin-top: 18px;
+  margin-top: 54px;
   color: #ffffff;
 
   background-color: #81b3d2;
@@ -422,27 +422,7 @@ fieldset button:hover {
   margin-top: 28px;
 }
 
-.search-form {
 
-  display: flex;
-  width: 1200px;
-  height: 395px;
-  margin: 0 auto;
-  margin-bottom: -395px;
-}
-
-.search-form .wrap {
-
-  width: 568px;
-  margin: 0 auto;
-  background-color: #ffffff;
-
-  z-index: 1;
-}
-
-.search-form form {
-  padding: 55px;
-}
 
 .banner {
   display: flex;
@@ -565,6 +545,7 @@ td .text {
   display: flex;
   width: 400px;
   min-height: 256px;
+  margin-bottom: 8px;
 
   color: #ffffff;
 
@@ -733,8 +714,6 @@ fieldset:nth-child(3) {
   margin: 0 auto;
   background: url('../img/map.jpg') no-repeat;
 }
-
-/* <section class="search-form"> */
 
 .search-form form {
   width: 458px;
@@ -1011,3 +990,44 @@ label svg {
 }
 
 /* filter-range -----------------------------------------------------------------------*/
+
+@keyframes bounce {
+  0%   { transform: scale(0); }
+  100% { transform: scale(100%);     }
+}
+
+.search-form .wrap.modal {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 2s;
+}
+
+.search-form {
+  display: flex;
+  width: 1200px;
+  height: 395px;
+  margin: 0 auto;
+  margin-bottom: -395px;
+}
+
+.search-form .wrap {
+ display: none;
+
+  width: 568px;
+  margin: 0 auto;
+  background-color: #ffffff;
+
+  z-index: 1;
+}
+
+.search-form form {
+  /* display: none; */
+  padding: 55px;
+}
+
+.item .text {
+  width: 310px;
+  margin: 0 auto;
+}
+
+

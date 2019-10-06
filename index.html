@@ -46,7 +46,7 @@
             <div class="data">
               <h3>Настоящий<br>городок</h3>
               <div class="text white">— №1 —</div>
-              <div class="text white">Седона — не аттракцион для туристов,<br> там течёт своя жизнь </div>
+              <div class="text white">Седона — не аттракцион для туристов, там течёт своя жизнь </div>
             </div>
           </div>
           <div class="img">
@@ -63,21 +63,21 @@
             <img src="img/icon-1.svg" width="75" height="72" alt="Жильё">
           </div>
           <h3>Жильё</h3>
-          <div class="text">Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</div>
+          <div class="text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</div>
         </div>
         <div class="item">
           <div class="img">
             <img src="img/icon-2.svg" width="75" height="70" alt="Еда">
           </div>
           <h3>Еда</h3>
-          <div class="text">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</div>
+          <div class="text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</div>
         </div>
         <div class="item">
           <div class="img">
             <img src="img/icon-3.svg" width="64" height="77" alt="Сувениры">
           </div>
           <h3>Сувениры</h3>
-          <div class="text">Не только китайского, но и местного<br>производства!</div>
+          <div class="text">Не только китайского, но и местного производства!</div>
         </div>
       </div>
     </section>
@@ -92,7 +92,7 @@
             <div class="data">
               <h3>Там есть<br>мост дьявола</h3>
               <div class="text white">— №2 —</div>
-              <div class="text white">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</div>
+              <div class="text white">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
             </div>
           </div>
         </div>
@@ -104,17 +104,17 @@
         <div class="item">
           <h3>Небольшая<br> площадь</h3>
           <div class="text">— №3 —</div>
-          <div class="text">Все достопримечательности<br> находятся очень близко</div>
+          <div class="text">Все достопримечательности находятся очень близко</div>
         </div>
         <div class="item">
           <h3>Красивая<br> дорога</h3>
           <div class="text">— №4 —</div>
-          <div class="text">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</div>
+          <div class="text">Ехать в Седону из Лас-Вегаса совсем  не скучно!</div>
         </div>
         <div class="item">
           <h3>Мало<br>туристов</h3>
           <div class="text">— №5 —</div>
-          <div class="text">Большинство едет в гранд каньон<br> и толпится там</div>
+          <div class="text">Большинство едет в гранд каньон и толпится там</div>
         </div>
       </div>
     </section>
@@ -130,11 +130,11 @@
 
     <section class="search-form">
       <div class="wrap">
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form  action="https://echo.htmlacademy.ru" method="post">
           <div class="date">
 
             <label for="arrival-date">Дата заезда:
-              <input type="text" value="24 апреля 2017" id="arrival-date" name="arrival-date">
+              <input type="text" value="24 апреля 2017" id="arrival-date" name="arrival-date" required>
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23">
                 <g>
                   <g>
@@ -155,7 +155,7 @@
 
             <div class="date">
               <label for="departure-date">Дата выезда:
-                <input type="text" value="4 июля 2017" id="departure-date" name="departure-date">
+                <input type="text" value="4 июля 2017" id="departure-date" name="departure-date" required>
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23">
                   <g>
                     <g>
@@ -204,7 +204,7 @@
                       <rect x="0" y="4.5" width="12" height="3" />
                     </svg>
                   </div>
-                  <input class="choice-box" type="text" value="0" id="number-of-children" name="number-of-adults">
+                  <input class="choice-box" type="text" value="0" id="number-of-children" name="number-of-children">
                   <div class="choice-box plus">
                     <svg>
                       <rect x="0" y="4.5" width="12" height="3" />
@@ -215,15 +215,14 @@
               </label>
             </div>
           </div>
+          <button class="button" type="submit">Найти</button>
         </form>
-        <button class="button" type="submit">Найти</button>
       </div>
     </section>
 
     <section class="map">
       <div class="wrap">
         <h2 class="visually-hidden">Карта</h2>
-        <!-- <img src="img/map.jpg" width="1200" height="471" alt="Карта дорог "> -->
       </div>
     </section>
   </main>
@@ -279,6 +278,8 @@
 
     </div>
   </footer>
+
+  <script src="js/index.js"></script>
 
 </body>
 
