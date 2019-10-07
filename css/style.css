@@ -108,6 +108,7 @@ h3 {
 
 .grey {
   background-color: #f3f3f3;
+  margin-top: -8px;
 }
 
 h2 {
@@ -398,6 +399,7 @@ fieldset button:hover {
 }
 
 .interesting .search {
+  margin-top: 1px;
   width: 568px;
   height: 86px;
 }
@@ -992,8 +994,13 @@ label svg {
 /* filter-range -----------------------------------------------------------------------*/
 
 @keyframes bounce {
-  0%   { transform: scale(0); }
-  100% { transform: scale(100%);     }
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
 }
 
 .search-form .wrap.modal {
@@ -1011,7 +1018,7 @@ label svg {
 }
 
 .search-form .wrap {
- display: none;
+  display: none;
 
   width: 568px;
   margin: 0 auto;
@@ -1026,8 +1033,6 @@ label svg {
 }
 
 .item .text {
-  width: 310px;
+  width: 300px;
   margin: 0 auto;
 }
-
-
