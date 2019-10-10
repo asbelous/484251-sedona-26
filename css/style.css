@@ -168,7 +168,7 @@ input {
   height: 58px;
   font-size: 21px;
   font-weight: 700;
-  margin-top: 54px;
+  margin-top: 60px;
   color: #ffffff;
 
   background-color: #81b3d2;
@@ -378,7 +378,7 @@ fieldset button:hover {
 .interesting {
   display: flex;
   width: 1200px;
-  height: 291px;
+  height: 285px;
   margin: 0 auto;
 }
 
@@ -388,7 +388,7 @@ fieldset button:hover {
 }
 
 .interesting h2 {
-  margin-top: 54px;
+  margin-top: 48px;
   margin-bottom: 40px;
 }
 
@@ -575,7 +575,7 @@ td .text {
 }
 
 .advantage {
-  height: 330px;
+  height: 320px;
 }
 
 .advantage .wrap .item {
@@ -589,11 +589,11 @@ td .text {
 }
 
 .advantage .img {
-  margin-top: -26px;
+  margin-top: -42px;
 }
 
 .advantage .wrap .item:last-child .img {
-  margin-top: -6px;
+  margin-top: -14px;
 }
 
 .advantage .item .text {
@@ -728,7 +728,7 @@ form .date {
 
 .date input {
   position: absolute;
-  width: 335px;
+  width: 330px;
   height: 37px;
   top: -7px;
   right: 0;
@@ -778,7 +778,7 @@ label svg {
 }
 
 .adults .choice {
-  left: 104px;
+  left: 112px;
 }
 
 .choice-box {
