@@ -1,14 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-
   background-color: #ffffff;
 }
 
@@ -16,17 +14,13 @@ body {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   -webkit-clip-path: inset(100%);
-
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -49,16 +43,13 @@ a {
   width: 1200px;
   height: 56px;
   margin: 0 auto;
-
   font-size: 14px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
 .header-logo img {
   position: absolute;
-
   margin: 0 calc(50% - 69px);
   z-index: 1;
 }
@@ -130,7 +121,6 @@ h2 {
 button {
   color: #ffffff;
   text-transform: uppercase;
-
   background-color: #766357;
 }
 
@@ -140,7 +130,6 @@ button:hover {
 
 button:active {
   opacity: 0.3;
-
   background-color: #503e33;
 }
 
@@ -176,7 +165,6 @@ input {
   font-weight: 700;
   margin-top: 60px;
   color: #ffffff;
-
   background-color: #81b3d2;
 }
 
@@ -186,7 +174,6 @@ input {
 
 .search-form .button:active {
   opacity: 0.3;
-
   background-color: #5496bd;
 }
 
@@ -239,7 +226,6 @@ h3 a:active {
 a.button {
   color: #ffffff;
   line-height: 21px;
-
   background-color: #81b3d2;
 }
 
@@ -249,7 +235,6 @@ a.button:hover {
 
 a.button:active {
   opacity: 0.3;
-
   background-color: #5496bd;
 }
 
@@ -272,13 +257,11 @@ fieldset ul {
 
 fieldset button {
   border: 2px solid #ffffff;
-
   background-color: rgba(0, 0, 0, 0);
 }
 
 fieldset button:hover {
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -333,13 +316,11 @@ fieldset button:hover {
 
 .sort .not-active {
   opacity: 0.3;
-
   border-bottom: 1px dotted #000000;
 }
 
 .sort .not-active:hover {
   color: #81b3d2;
-
   border-bottom: 1px dotted #81b3d2;
 }
 
@@ -444,8 +425,6 @@ fieldset button:hover {
   margin-top: 28px;
 }
 
-
-
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,11 +525,8 @@ td .text {
   height: 22px;
   margin-top: 41px;
   color: #666666;
-
   text-align: center;
-
   line-height: 21px;
-
   background-color: #f2f2f2;
 }
 
@@ -582,16 +558,12 @@ td .text {
   width: 400px;
   min-height: 256px;
   margin-bottom: 8px;
-
   color: #ffffff;
-
   background-color: #81b3d2;
 }
 
 .data {
-
   margin: 0 auto;
-
 }
 
 .data h3 {
@@ -657,7 +629,6 @@ td .text {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-
   border-bottom: 1px solid #81b3d2;
 }
 
@@ -666,7 +637,6 @@ td .text {
 }
 
 .filter .wrap {
-
   height: 303px;
 }
 
@@ -714,7 +684,6 @@ fieldset:nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
   margin-top: 32px;
   margin-left: 44px;
   height: 22px;
@@ -833,13 +802,9 @@ label svg {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-
   width: 38px;
   height: 38px;
-
   text-align: center;
-  /* vertical-align: middle; */
-
   cursor: pointer;
 }
 
@@ -847,7 +812,6 @@ label svg {
   width: 12px;
   height: 12px;
   margin-top: 12px;
-  /* left: 13px; */
   fill: #a9a9a9;
 }
 
@@ -890,7 +854,6 @@ label svg {
           justify-content: center;
   width: 46px;
   height: 48px;
-
   background-color: #81b3d2;
 }
 
@@ -912,14 +875,12 @@ label svg {
   width: 317px;
   margin-top: 26px;
   margin-left: 303px;
-
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
   margin-bottom: 9px;
-
   text-align: left;
   font-weight: 600;
   font-size: 16px;
@@ -929,12 +890,9 @@ label svg {
 .price-controls {
   position: relative;
   margin-top: 15px;
-
   height: 30px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -944,10 +902,8 @@ label svg {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -956,11 +912,9 @@ label svg {
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
   line-height: 28px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -977,40 +931,33 @@ label svg {
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
-  font: inherit;
-
+  font: inherit;  /* display: none; */
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 7px;
   height: 7px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -1036,12 +983,10 @@ label svg {
   margin: 0 auto;
   margin-left: 84px;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -1050,7 +995,6 @@ label svg {
 
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
 
@@ -1100,16 +1044,13 @@ label svg {
 
 .search-form .wrap {
   display: none;
-
   width: 568px;
   margin: 0 auto;
   background-color: #ffffff;
-
   z-index: 1;
 }
 
 .search-form form {
-  /* display: none; */
   padding: 55px;
 }
 
