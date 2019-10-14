@@ -4,8 +4,8 @@ var arrivalDate = modal.querySelector("#arrival-date");
 var departureDate = modal.querySelector("#departure-date");
 var numberOfAdults = modal.querySelector("#number-of-adults");
 var numberOfChildren = modal.querySelector("#number-of-children");
-var storageNumberOfAdults = localStorage.getItem("number-of-adults");
-var storageNumberOfChildren = localStorage.getItem("number-of-children");
+var storageNumberOfAdults = localStorage.getItem("numberOfAdults");
+var storageNumberOfChildren = localStorage.getItem("numberOfChildren");
 
 var isStorageSupport = true;
 var storage = "";
@@ -32,8 +32,8 @@ search.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
   if (arrivalDate.value || departureDate.value) {
     if (isStorageSupport) {
-      localStorage.setItem("number-of-adults". numberOfAdults.value);
-      localStorage.setItem("number-of-children", numberOfChildren.value);
+      localStorage.setItem("numberOfAdults". staorageNumberOfAdults.value);
+      localStorage.setItem("numberOfChildre", storageNumberOfChildren.value);
     }
   }
 });

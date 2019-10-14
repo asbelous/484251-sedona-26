@@ -26,6 +26,7 @@
   </header>
 
   <section class="container banner">
+    <h2 class="visually-hidden">Баннер</h2>
     <img class="banner-text" src="img/intro-welcome.svg" width="457" height="352" alt="Welcome to the gorgeus Sedona">
   </section>
 
@@ -129,8 +130,9 @@
     </section>
 
     <section class="search-form">
+      <h2 class="visually-hidden">Форма поиска</h2>
       <div class="wrap">
-        <form  action="https://echo.htmlacademy.ru" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <div class="date">
 
             <label for="arrival-date">Дата заезда:
@@ -177,42 +179,38 @@
           </div>
           <div class="members">
             <div class="members-box adults">
-              <label for="number-of-adults">
-                Взрослые:
-                <div class="choice">
-                  <div class="choice-box minus">
-                    <svg>
-                      <rect x="0" y="4.5" width="12" height="3" />
-                    </svg>
-                  </div>
-                  <input class="choice-box" type="text" value="2" id="number-of-adults" name="number-of-adults">
-                  <div class="choice-box plus">
-                    <svg>
-                      <rect x="0" y="4.5" width="12" height="3" />
-                      <rect x="4.5" y="0" width="3" height="12" />
-                    </svg>
-                  </div>
+              <label for="number-of-adults">Взрослые:</label>
+              <div class="choice">
+                <div class="choice-box minus">
+                  <svg>
+                    <rect x="0" y="4.5" width="12" height="3" />
+                  </svg>
                 </div>
-              </label>
+                <input class="choice-box" type="text" value="2" id="number-of-adults" name="number-of-adults">
+                <div class="choice-box plus">
+                  <svg>
+                    <rect x="0" y="4.5" width="12" height="3" />
+                    <rect x="4.5" y="0" width="3" height="12" />
+                  </svg>
+                </div>
+              </div>
             </div>
             <div class="members-box children">
-              <label for="number-of-children">
-                Дети:
-                <div class="choice">
-                  <div class="choice-box minus">
-                    <svg>
-                      <rect x="0" y="4.5" width="12" height="3" />
-                    </svg>
-                  </div>
-                  <input class="choice-box" type="text" value="0" id="number-of-children" name="number-of-children">
-                  <div class="choice-box plus">
-                    <svg>
-                      <rect x="0" y="4.5" width="12" height="3" />
-                      <rect x="4.5" y="0" width="3" height="12" />
-                    </svg>
-                  </div>
+              <label for="number-of-children">Дети:</label>
+              <div class="choice">
+                <div class="choice-box minus">
+                  <svg>
+                    <rect x="0" y="4.5" width="12" height="3" />
+                  </svg>
                 </div>
-              </label>
+                <input class="choice-box" type="text" value="0" id="number-of-children" name="number-of-children">
+                <div class="choice-box plus">
+                  <svg>
+                    <rect x="0" y="4.5" width="12" height="3" />
+                    <rect x="4.5" y="0" width="3" height="12" />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
           <button class="button" type="submit">Найти</button>
@@ -223,7 +221,9 @@
     <section class="map">
       <div class="wrap">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730543!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1570342533685!5m2!1sru!2sru" width="1200" height="471" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <script async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac7933ed3f5da58be721da0b5e38ea2d4f702a95dacae3fb1180f98bbc836fd36&amp;width=1200&amp;height=471&amp;lang=ru_RU&amp;scroll=true">
+        </script>
       </div>
     </section>
   </main>

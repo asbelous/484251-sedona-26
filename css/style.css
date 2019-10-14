@@ -25,7 +25,9 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -41,6 +43,8 @@ a {
 
 .navigation {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   height: 56px;
@@ -60,6 +64,8 @@ a {
 }
 
 .navigation-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   height: 56px;
@@ -140,7 +146,7 @@ button:active {
 
 input {
   font-weight: 700;
-  color: 000000;
+  color: #000000;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
 }
@@ -185,8 +191,12 @@ input {
 }
 
 .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 103px;
 }
 
@@ -359,12 +369,18 @@ fieldset button:hover {
 }
 
 .footer .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   height: 120px;
   margin: 0 auto;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer h3 {
@@ -376,6 +392,8 @@ fieldset button:hover {
 }
 
 .interesting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   height: 285px;
@@ -405,6 +423,8 @@ fieldset button:hover {
 }
 
 .introduce {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   height: 215px;
@@ -427,6 +447,8 @@ fieldset button:hover {
 
 
 .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   height: 510px;
@@ -454,11 +476,15 @@ fieldset button:hover {
 }
 
 .catalog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #81b3d2;
 }
 
 .search-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 437px;
   height: 90px;
@@ -529,6 +555,8 @@ td .text {
 }
 
 .reasons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   min-height: 256px;
@@ -536,14 +564,20 @@ td .text {
 }
 
 .reasons .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 400px;
   min-height: 256px;
@@ -618,6 +652,8 @@ td .text {
 }
 
 .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -660,6 +696,8 @@ fieldset:nth-child(3) {
 }
 
 .filter-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -673,6 +711,8 @@ fieldset:nth-child(3) {
 }
 
 .sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   margin-top: 32px;
@@ -707,6 +747,8 @@ fieldset:nth-child(3) {
 }
 
 .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -758,8 +800,12 @@ label svg {
 }
 
 .members {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .members-box {
@@ -769,6 +815,8 @@ label svg {
 }
 
 .choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   width: 114px;
@@ -782,14 +830,15 @@ label svg {
 }
 
 .choice-box {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
 
   width: 38px;
   height: 38px;
 
   text-align: center;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 
   cursor: pointer;
 }
@@ -797,8 +846,8 @@ label svg {
 .choice-box svg {
   width: 12px;
   height: 12px;
-  top: 13px;
-  left: 13px;
+  margin-top: 12px;
+  /* left: 13px; */
   fill: #a9a9a9;
 }
 
@@ -815,9 +864,14 @@ label svg {
 }
 
 .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 150px;
   margin: 0 auto;
   padding: 0;
@@ -825,9 +879,15 @@ label svg {
 }
 
 .social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 46px;
   height: 48px;
 
@@ -889,7 +949,9 @@ label svg {
   height: 22px;
 
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -952,7 +1014,8 @@ label svg {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -993,23 +1056,41 @@ label svg {
 
 /* filter-range -----------------------------------------------------------------------*/
 
-@keyframes bounce {
-  0% {
-    transform: scale(0);
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 
-  100% {
-    transform: scale(100%);
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 .search-form .wrap.modal {
   display: block;
-  animation-name: bounce;
-  animation-duration: 2s;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
 }
 
 .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   height: 395px;
