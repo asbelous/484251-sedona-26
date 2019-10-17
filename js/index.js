@@ -32,7 +32,7 @@ search.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
   if (arrivalDate.value || departureDate.value) {
     if (isStorageSupport) {
-      localStorage.setItem("numberOfAdults". staorageNumberOfAdults.value);
+      localStorage.setItem("numberOfAdults".staorageNumberOfAdults.value);
       localStorage.setItem("numberOfChildre", storageNumberOfChildren.value);
     }
   }
