@@ -665,6 +665,10 @@ fieldset:nth-child(3) {
   margin-left: 58px;
 }
 
+.check legend {
+  text-align: left;
+}
+
 .filter-footer {
   display: -webkit-box;
   display: -ms-flexbox;
