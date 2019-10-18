@@ -7,7 +7,7 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -129,7 +129,7 @@ button:hover {
 }
 
 button:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
@@ -150,7 +150,7 @@ input {
   background-color: #ffffff;
 }
 
-.date input:hover+svg path {
+.date input:hover+ button svg path {
   fill: #000000;
 }
 
@@ -173,7 +173,7 @@ input {
 }
 
 .search-form .button:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -234,7 +234,7 @@ a.button:hover {
 }
 
 a.button:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -280,6 +280,10 @@ fieldset button:hover {
   cursor: pointer;
 }
 
+.filter-option label:focus-within {
+  border-bottom: 1px dotted #ffffff;
+}
+
 .check-box {
   position: absolute;
   width: 27px;
@@ -314,6 +318,32 @@ fieldset button:hover {
   cursor: pointer;
 }
 
+.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+  margin-left: 44px;
+  height: 22px;
+}
+
+.sort a {
+  text-align: left;
+}
+
+.sort a:nth-child(2) {
+  width: 82px;
+  margin-left: 36px;
+}
+
+.sort a:nth-child(3) {
+  width: 52px;
+}
+
+.sort a:last-child {
+  margin-left: 30px;
+}
+
 .sort .not-active {
   opacity: 0.3;
   border-bottom: 1px dotted #000000;
@@ -328,11 +358,17 @@ fieldset button:hover {
   color: #000000;
 }
 
+.up-down {
+  margin-top: 31px;
+  margin-right: 73px;
+  margin-left: auto;
+}
+
 .up-down path {
   fill: #cacaca;
 }
 
-.up-down .active path {
+.active path {
   fill: #81b3d2;
 }
 
@@ -342,6 +378,10 @@ fieldset button:hover {
 
 .up-down path:active {
   fill: #81b3d2;
+}
+
+.up {
+  margin-right: 10px;
 }
 
 .up,
@@ -485,11 +525,18 @@ fieldset button:hover {
   text-align: center;
 }
 
-.item-data button {
+.item-data .book {
   width: 142px;
-  height: 27px;
-  line-height: 27px;
-  margin-top: 10px;
+  background-color: #766357;
+}
+
+.item-data .book:hover {
+  background-color: #604e43;
+}
+
+.item-data .book:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 
 .item-name {
@@ -512,12 +559,12 @@ td .text {
 }
 
 .raiting-star {
-  margin-top: 0;
+  margin-top: -2px;
   text-align: right;
 }
 
 .raiting-star img {
-  margin-left: 4px;
+  margin-left: 2px;
 }
 
 .raiting .text {
@@ -551,19 +598,20 @@ td .text {
   display: flex;
 }
 
-.blue {
+.data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+   flex-direction: column;
   width: 400px;
   min-height: 256px;
+  margin: 0 auto;
   margin-bottom: 8px;
-  color: #ffffff;
-  background-color: #81b3d2;
 }
 
-.data {
-  margin: 0 auto;
+.blue {
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .data h3 {
@@ -584,25 +632,25 @@ td .text {
   height: 320px;
 }
 
-.advantage .wrap .item {
+/* .advantage .wrap .item {
   display: block;
   width: 400px;
   margin: auto;
-}
+} */
 
-.advantage .wrap .item:nth-child(3) {
+/* .advantage .wrap .item:nth-child(3) {
   margin-top: 59px;
-}
+} */
 
 .advantage .img {
-  margin-top: -42px;
+  margin-top: 42px;
 }
 
-.advantage .wrap .item:last-child .img {
-  margin-top: -14px;
+.advantage .data:last-child .img {
+  margin-top: 36px;
 }
 
-.advantage .item .text {
+.advantage .text {
   line-height: 20px;
 }
 
@@ -643,7 +691,7 @@ td .text {
 .filter-wrap {
   height: 217px;
   background-color: #2a3e45;
-  background: url(../img/filter-bg.jpg) no-repeat 0 50%;
+  background: url('../img/filter-bg.jpg') no-repeat 0 50%;
 }
 
 fieldset {
@@ -684,40 +732,7 @@ fieldset:nth-child(3) {
   margin: 0;
 }
 
-.sort {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 32px;
-  margin-left: 44px;
-  height: 22px;
-}
 
-.sort div {
-  text-align: left;
-}
-
-.sort div:first-child {
-  margin-right: 36px;
-}
-
-.sort div:nth-child(2) {
-  width: 82px;
-}
-
-.sort div:nth-child(3) {
-  width: 52px;
-}
-
-.sort div:last-child {
-  margin-left: 30px;
-}
-
-.up-down {
-  margin-top: 31px;
-  margin-right: 73px;
-  margin-left: auto;
-}
 
 .map {
   display: -webkit-box;
@@ -888,7 +903,7 @@ label svg {
   text-align: left;
   font-weight: 600;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 18px;
 }
 
 .price-controls {
@@ -1063,3 +1078,8 @@ label svg {
   width: 300px;
   margin: 0 auto;
 }
+
+/* .shadow {
+  shadow: 5px 0 15px rgba(0, 1, 1, 0.2);
+               -5px -1px 15px rgba(0, 1, 1, 0.2);
+} */
