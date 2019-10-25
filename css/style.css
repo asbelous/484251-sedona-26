@@ -55,9 +55,7 @@ a {
 }
 
 .navigation-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   width: 1200px;
   height: 56px;
   margin-left: -40px;
@@ -70,8 +68,20 @@ a {
   height: 56px;
 }
 
+.navigation-items li:first-child {
+  float: left;
+}
+
+.navigation-items li:nth-child(2) {
+  float: left;
+}
+
 .navigation-items li:nth-child(3) {
-  margin-left: auto;
+  float: right;
+}
+
+.navigation-items li:last-child {
+  float: right;
 }
 
 .navigation-items a {
@@ -150,7 +160,7 @@ input {
   background-color: #ffffff;
 }
 
-.date input:hover+ button svg path {
+.date input:hover+button svg path {
   fill: #000000;
 }
 
@@ -402,6 +412,7 @@ fieldset button:hover {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  background-color: #ffffff;
 }
 
 .footer h3 {
@@ -419,6 +430,7 @@ fieldset button:hover {
   width: 1200px;
   height: 285px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .interesting .wrap {
@@ -450,6 +462,7 @@ fieldset button:hover {
   width: 1200px;
   height: 215px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .introduce .wrap {
@@ -476,7 +489,6 @@ fieldset button:hover {
   background:
     url('../img/intro-mask.svg') 0 101% no-repeat,
     url('../img/index-bg.jpg') 0 29%;
-
 }
 
 .banner-text {
@@ -499,6 +511,7 @@ fieldset button:hover {
   display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #81b3d2;
+  background-color: #ffffff;
 }
 
 .search-item {
@@ -584,6 +597,7 @@ td .text {
   width: 1200px;
   min-height: 256px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .reasons .wrap {
@@ -602,7 +616,7 @@ td .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-   flex-direction: column;
+  flex-direction: column;
   width: 400px;
   min-height: 256px;
   margin: 0 auto;
@@ -630,17 +644,8 @@ td .text {
 
 .advantage {
   height: 320px;
+  background-color: #ffffff;
 }
-
-/* .advantage .wrap .item {
-  display: block;
-  width: 400px;
-  margin: auto;
-} */
-
-/* .advantage .wrap .item:nth-child(3) {
-  margin-top: 59px;
-} */
 
 .advantage .img {
   margin-top: 42px;
@@ -686,6 +691,7 @@ td .text {
 
 .filter .wrap {
   height: 303px;
+  background-color: #ffffff;
 }
 
 .filter-wrap {
@@ -732,8 +738,6 @@ fieldset:nth-child(3) {
   margin: 0;
 }
 
-
-
 .map {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -764,10 +768,7 @@ form .date {
   right: 0;
   padding-left: 14px;
   text-transform: uppercase;
-
 }
-
-
 
 .date label {
   position: relative;
@@ -952,7 +953,6 @@ label svg {
   margin: 0;
   color: inherit;
   font: inherit;
-  /* display: none; */
   background: none;
   border: none;
 }
@@ -1079,7 +1079,9 @@ label svg {
   margin: 0 auto;
 }
 
-/* .shadow {
-  shadow: 5px 0 15px rgba(0, 1, 1, 0.2);
-               -5px -1px 15px rgba(0, 1, 1, 0.2);
-} */
+.shadow {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 5px 0 15px rgba(0, 1, 1, 0.2),
+    0 5px 15px rgba(0, 1, 1, 0.2);
+}

@@ -16,6 +16,7 @@ try {
   isStorageSupport = false;
 }
 
+modal.classList.remove("modal");
 
 search.addEventListener("click", function (evt) {
   evt.preventDefault();
