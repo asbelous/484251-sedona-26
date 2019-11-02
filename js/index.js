@@ -1,5 +1,6 @@
 var search = document.querySelector(".search");
 var modal = document.querySelector(".search-form .wrap");
+var arrival_date = document.querySelector("#arrival-date");
 
 try {
   modal.classList.remove("modal");
