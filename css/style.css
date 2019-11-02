@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -11,8 +11,8 @@ body {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -612,8 +612,8 @@ td .text {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 400px;
   min-height: 256px;
   margin: 0 auto;
@@ -1132,6 +1132,6 @@ label svg {
   margin: 0 auto;
   -webkit-box-shadow: 5px 0 15px rgba(0, 1, 1, 0.2),
     0 5px 15px rgba(0, 1, 1, 0.2);
-          box-shadow: 5px 0 15px rgba(0, 1, 1, 0.2),
+  box-shadow: 5px 0 15px rgba(0, 1, 1, 0.2),
     0 5px 15px rgba(0, 1, 1, 0.2);
 }
