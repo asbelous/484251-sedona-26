@@ -621,7 +621,7 @@ td .text {
 .data h3 {
   font-size: 21px;
   margin-top: 47px;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .text.white:first-child {
@@ -642,7 +642,7 @@ td .text {
   margin-top: 42px;
 }
 
-.advantage .data:last-child .img {
+.data:last-child .img {
   margin-top: 36px;
 }
 
@@ -657,13 +657,7 @@ td .text {
   margin-top: 43px;
 }
 
-.reasons .grey .item h3 {
-  font-size: 21px;
-  margin-top: 2px;
-  line-height: 22px;
-}
-
-.reasons .grey .item .text:last-child {
+.item .text:last-child {
   margin-top: 18px;
   line-height: 22px;
 }
@@ -780,33 +774,29 @@ form .date {
 .date input:hover {
   font-weight: 700;
   color: #000000;
-  /* background-color: #f2f2f2;
-  border: 2px solid #f2f2f2; */
   background-color: #ebebeb;
   border: 2px solid #ebebeb;
 }
 
-.date input:hover+button {
+input:hover+button {
   font-weight: 700;
   color: #000000;
-  /* background-color: #f2f2f2; */
-  /* border: 2px solid #f2f2f2; */
   background-color: #ebebeb;
 }
 
-.date input:hover+button path {
+input:hover+button path {
   fill: #000000;
 }
 
-.date button:hover path {
+button:hover path {
   fill: #000000;
 }
 
-.date button:active path {
+button:active path {
   fill: #81b3d2;
 }
 
-.date>input+.date>button:hover {
+input+button:hover {
   background-color: #ebebeb;
   border: 2px solid #ebebeb;
 }
@@ -820,11 +810,11 @@ form .date {
   background-color: #ffffff;
 }
 
-.date input:focus+button {
+input:focus+button {
   background-color: #ffffff;
 }
 
-.date input:focus+svg path {
+input:focus path {
   fill: #81b3d2;
 }
 
